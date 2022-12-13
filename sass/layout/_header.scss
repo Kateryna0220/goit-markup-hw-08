@@ -163,9 +163,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     overflow: auto;
+    left: 0;
+
 }
 
 .mob-menu__list,
@@ -213,5 +215,37 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+    .mob-menu__bottom{
+    margin-top: 64px;
+    margin-left: 20px;
+        @media screen and (min-width: 768px) {
+                display: none;
+            }
+    }
+    .mob-menu__contacts{
+        display: flex;
+    }
+    .mob-menu__contacts-item{
+            margin-right: 10px;
+                border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    .mob-menu__contacts-item:last-child {
+        margin-right: 0px;
+        border-right: none;
+    }
+    .header-social__link{
+        padding-right: 10px;
+            width: 85px;
+            height: 22px;
+            left: 40px;
+            top: 726px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
     }
 }

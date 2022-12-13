@@ -8,11 +8,11 @@
     min-width: 130px;
 
     @include mobile {
-        width: 210px;
+    flex-basis: calc((100% - 30px) / 2);
     }
 
     @include tablet {
-        width: 226px;
+    flex-basis: calc((100% - 60px) / 3);
     }
 
     @include desktop {

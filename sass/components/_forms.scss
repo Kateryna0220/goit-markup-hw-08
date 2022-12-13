@@ -102,7 +102,11 @@
 
     &:focus {
         border: 1px solid #2196f3;
-        outline: none;
+        outline: none;}
+
+    &:hover {
+            border: 1px solid #2196f3;
+            outline: none;
     }
 }
 

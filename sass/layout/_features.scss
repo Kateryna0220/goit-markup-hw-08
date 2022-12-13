@@ -7,7 +7,7 @@
     max-width: 450px;
 
     @include tablet {
-        max-width: 354px;
+    width: calc((100% - 60px) / 2);
     }
 
     @include desktop {
