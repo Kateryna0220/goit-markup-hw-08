@@ -1,10 +1,10 @@
 .clients__list {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: var(--element-gap);
 }
 
 .clients__item {
-    flex-grow: 1;
+
     min-width: 130px;
 
     @include mobile {
@@ -16,7 +16,8 @@
     }
 
     @include desktop {
-    justify-content: baseline;
+        flex-wrap: nowrap;
+    flex-basis: calc((100% - 150px) / 6);
     }
 }
 
