@@ -309,6 +309,14 @@ body {
   outline: none;
 }
 
+.lead__icon:hover {
+  fill: var(--accent-color);
+}
+
+.lead__icon:focus {
+  fill: var(--accent-color);
+}
+
 .lead__text--textarea {
   resize: none;
   min-height: 120px;
@@ -1042,7 +1050,15 @@ body {
   left: 0;
 }
 
-.mob-menu__list,
+.mob-menu__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  margin-bottom: 302px;
+}
+
 .mob-menu__contacts {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1207,6 +1223,9 @@ body {
       flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .portfolio__list {

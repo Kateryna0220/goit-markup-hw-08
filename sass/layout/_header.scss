@@ -169,11 +169,15 @@
 
 }
 
-.mob-menu__list,
-.mob-menu__contacts {
+.mob-menu__list {
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 64px;
+    margin-bottom: 302px;
+}
+.mob-menu__contacts{
+    flex-direction: column;
+        gap: 32px;
+        margin-bottom: 64px;
 }
 
 .mob-menu__link {
