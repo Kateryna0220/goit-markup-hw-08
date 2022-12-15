@@ -309,12 +309,12 @@ body {
   outline: none;
 }
 
-.lead__icon:hover {
+.lead__text__input:focus ~ lead__icon,
+.lead__text__input:hover ~ lead__icon {
   fill: var(--accent-color);
-}
-
-.lead__icon:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .lead__text--textarea {
@@ -625,9 +625,6 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-
 }
 
 .cards__title {
@@ -646,15 +643,12 @@ body {
 }
 
 .clients__list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   gap: var(--element-gap);
 }
 
 .clients__item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-
   min-width: 130px;
 }
 @media screen and (min-width: 480px) {
@@ -671,7 +665,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 
