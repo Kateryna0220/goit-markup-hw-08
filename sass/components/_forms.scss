@@ -69,6 +69,13 @@
     position: relative;
     display: block;
 }
+.lead__input:focus~.lead__icon,
+.lead__input:hover~.lead__icon {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
+}
 
 .lead__icon {
     position: absolute;
@@ -79,6 +86,9 @@
     .lead__text:focus+& {
         fill: var(--accent-color);
     }
+        .lead__text:hover+& {
+            fill: var(--accent-color);
+        }
 }
 
 .lead__text {
@@ -110,8 +120,8 @@
     }
 }
 
-.lead__text__input:focus ~ lead__icon,
-.lead__text__input:hover ~ lead__icon {
+.lead__text__input:focus ~ .lead__icon,
+.lead__text__input:hover ~ .lead__icon {
     fill: var(--accent-color);
     color: var(--accent-color);
     border-color: var(--accent-color);
