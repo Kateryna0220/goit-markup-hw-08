@@ -2,19 +2,22 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 40px;
-    justify-content: center;
+    justify-content: start;
     
 
     @include mobile {
+        
         gap: 15px;
     }
 
     @include tablet {
+            justify-content: center;
         margin-bottom: 30px;
     }
 
     @include desktop {
         margin-bottom: 50px;
+            justify-content: center;
     }
 }
 

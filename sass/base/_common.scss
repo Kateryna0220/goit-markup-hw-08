@@ -6,7 +6,10 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
     background-color: var(--primary-bcg-color);
-    padding-top: 81px;
+    padding-top: 60px;
+@media screen and (min-width: 768px) {
+    padding-top: 80px;
+    }
 }
 
 .title {
