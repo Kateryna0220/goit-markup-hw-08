@@ -192,6 +192,7 @@ body {
 
 .subscribe__input {
   width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   padding: 15px;
   background-color: transparent;
